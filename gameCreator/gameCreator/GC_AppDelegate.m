@@ -9,8 +9,8 @@
 #import "GC_AppDelegate.h"
 
 #import "GC_FirstViewController.h"
-
 #import "GC_SecondViewController.h"
+#import "GC_ThirdViewController.h"
 
 @implementation GC_AppDelegate
 
@@ -20,8 +20,9 @@
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[GC_FirstViewController alloc] initWithNibName:@"GC_FirstViewController" bundle:nil];
     UIViewController *viewController2 = [[GC_SecondViewController alloc] initWithNibName:@"GC_SecondViewController" bundle:nil];
+    UIViewController *viewController3 = [[GC_ThirdViewController alloc] initWithNibName:@"GC_ThirdViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

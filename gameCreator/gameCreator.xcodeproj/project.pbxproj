@@ -24,6 +24,11 @@
 		B3C5901B167C9B4D0014CC83 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C5901A167C9B4D0014CC83 /* second@2x.png */; };
 		B3C5901E167C9B4D0014CC83 /* GC_FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C5901C167C9B4D0014CC83 /* GC_FirstViewController.xib */; };
 		B3C59021167C9B4D0014CC83 /* GC_SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C5901F167C9B4D0014CC83 /* GC_SecondViewController.xib */; };
+		B3C5902B167CA1580014CC83 /* GC_playGame_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C59029167CA1580014CC83 /* GC_playGame_ViewController.m */; };
+		B3C5902C167CA1580014CC83 /* GC_playGame_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C5902A167CA1580014CC83 /* GC_playGame_ViewController.xib */; };
+		B3C59030167CA3C80014CC83 /* GC_GameData.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5902F167CA3C80014CC83 /* GC_GameData.m */; };
+		B3C59034167CA76E0014CC83 /* GC_ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C59032167CA76D0014CC83 /* GC_ThirdViewController.m */; };
+		B3C59035167CA76E0014CC83 /* GC_ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C59033167CA76D0014CC83 /* GC_ThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,14 @@
 		B3C5901A167C9B4D0014CC83 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		B3C5901D167C9B4D0014CC83 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GC_FirstViewController.xib; sourceTree = "<group>"; };
 		B3C59020167C9B4D0014CC83 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GC_SecondViewController.xib; sourceTree = "<group>"; };
+		B3C59028167CA1580014CC83 /* GC_playGame_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GC_playGame_ViewController.h; path = playGame/GC_playGame_ViewController.h; sourceTree = "<group>"; };
+		B3C59029167CA1580014CC83 /* GC_playGame_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GC_playGame_ViewController.m; path = playGame/GC_playGame_ViewController.m; sourceTree = "<group>"; };
+		B3C5902A167CA1580014CC83 /* GC_playGame_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GC_playGame_ViewController.xib; path = playGame/GC_playGame_ViewController.xib; sourceTree = "<group>"; };
+		B3C5902E167CA3C80014CC83 /* GC_GameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GC_GameData.h; path = gameData/GC_GameData.h; sourceTree = "<group>"; };
+		B3C5902F167CA3C80014CC83 /* GC_GameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GC_GameData.m; path = gameData/GC_GameData.m; sourceTree = "<group>"; };
+		B3C59031167CA76D0014CC83 /* GC_ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GC_ThirdViewController.h; sourceTree = "<group>"; };
+		B3C59032167CA76D0014CC83 /* GC_ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GC_ThirdViewController.m; sourceTree = "<group>"; };
+		B3C59033167CA76D0014CC83 /* GC_ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GC_ThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +109,8 @@
 		B3C58FFC167C9B4D0014CC83 /* gameCreator */ = {
 			isa = PBXGroup;
 			children = (
+				B3C5902D167CA3990014CC83 /* gameData */,
+				B3C59027167CA0560014CC83 /* playGame */,
 				B3C59005167C9B4D0014CC83 /* GC_AppDelegate.h */,
 				B3C59006167C9B4D0014CC83 /* GC_AppDelegate.m */,
 				B3C5900E167C9B4D0014CC83 /* GC_FirstViewController.h */,
@@ -108,6 +123,9 @@
 				B3C5901A167C9B4D0014CC83 /* second@2x.png */,
 				B3C5901C167C9B4D0014CC83 /* GC_FirstViewController.xib */,
 				B3C5901F167C9B4D0014CC83 /* GC_SecondViewController.xib */,
+				B3C59031167CA76D0014CC83 /* GC_ThirdViewController.h */,
+				B3C59032167CA76D0014CC83 /* GC_ThirdViewController.m */,
+				B3C59033167CA76D0014CC83 /* GC_ThirdViewController.xib */,
 				B3C58FFD167C9B4D0014CC83 /* Supporting Files */,
 			);
 			path = gameCreator;
@@ -125,6 +143,25 @@
 				B3C5900C167C9B4D0014CC83 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3C59027167CA0560014CC83 /* playGame */ = {
+			isa = PBXGroup;
+			children = (
+				B3C59028167CA1580014CC83 /* GC_playGame_ViewController.h */,
+				B3C59029167CA1580014CC83 /* GC_playGame_ViewController.m */,
+				B3C5902A167CA1580014CC83 /* GC_playGame_ViewController.xib */,
+			);
+			name = playGame;
+			sourceTree = "<group>";
+		};
+		B3C5902D167CA3990014CC83 /* gameData */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5902E167CA3C80014CC83 /* GC_GameData.h */,
+				B3C5902F167CA3C80014CC83 /* GC_GameData.m */,
+			);
+			name = gameData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +226,8 @@
 				B3C5901B167C9B4D0014CC83 /* second@2x.png in Resources */,
 				B3C5901E167C9B4D0014CC83 /* GC_FirstViewController.xib in Resources */,
 				B3C59021167C9B4D0014CC83 /* GC_SecondViewController.xib in Resources */,
+				B3C5902C167CA1580014CC83 /* GC_playGame_ViewController.xib in Resources */,
+				B3C59035167CA76E0014CC83 /* GC_ThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +242,9 @@
 				B3C59007167C9B4D0014CC83 /* GC_AppDelegate.m in Sources */,
 				B3C59010167C9B4D0014CC83 /* GC_FirstViewController.m in Sources */,
 				B3C59017167C9B4D0014CC83 /* GC_SecondViewController.m in Sources */,
+				B3C5902B167CA1580014CC83 /* GC_playGame_ViewController.m in Sources */,
+				B3C59030167CA3C80014CC83 /* GC_GameData.m in Sources */,
+				B3C59034167CA76E0014CC83 /* GC_ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
