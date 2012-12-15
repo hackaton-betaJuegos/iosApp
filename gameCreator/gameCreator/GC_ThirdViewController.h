@@ -10,4 +10,8 @@
 
 @interface GC_ThirdViewController : UIViewController
 
+
+
+-(IBAction)abrirJuego:(id)sender;
+
 @end

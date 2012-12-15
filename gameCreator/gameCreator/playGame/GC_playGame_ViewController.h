@@ -7,14 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GC_GameData.h"
+#import "GC_Renderer.h"
 
 @interface GC_playGame_ViewController : UIViewController{
     
-    IBOutlet UIView *startView;
-    
+    IBOutlet UIButton *startView;
+    IBOutlet UIView *pausedView;
+    IBOutlet UIButton *backButton;
+    GC_Renderer *renderer;
+    NSTimer *timer;
     
 }
 
+@property GC_GameData *gameData;
+@property (nonatomic, readwrite) UIViewController *parentViewController;
+
 -(IBAction)startGame:(id)sender;
+-(IBAction)pauseGame:(id)sender;
+-(IBAction)resumeGame:(id)sender;
+-(IBAction)exitGame:(id)sender;
 
 @end

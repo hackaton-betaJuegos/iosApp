@@ -7,6 +7,7 @@
 //
 
 #import "GC_ThirdViewController.h"
+#import "GC_playGame_ViewController.h"
 
 @interface GC_ThirdViewController ()
 
@@ -33,6 +34,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)abrirJuego:(id)sender{
+    
+    GC_playGame_ViewController *playgame = [[GC_playGame_ViewController alloc] initWithNibName:@"GC_playGame_ViewController" bundle:nil];
+    [self presentModalViewController:playgame animated:YES];
+    playgame.parentViewController=self;
+    
 }
 
 @end
