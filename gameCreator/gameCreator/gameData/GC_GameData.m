@@ -41,14 +41,14 @@
         self.playerX = self.initialX = [[result objectForKey:@"InitialX"] intValue]*10;
         self.playerY = self.initialY = [[result objectForKey:@"InitialY"] intValue]*10;
         self.finalX = [[result objectForKey:@"FinalX"] intValue]*10;
-        NSArray *pointsTemp = [result objectForKey:@"Points"];
+        NSArray *pointsTemp = [result objectForKey:@"Blocks"];
         NSDictionary *dpoint;
         self.points = [NSMutableArray array];
         for ( dpoint in pointsTemp) {
             GC_Point *point = [[GC_Point alloc] init];
-            point.x = [[dpoint objectForKey:@"x"] intValue]*10;
-            point.y = [[dpoint objectForKey:@"y"] intValue]*10;
-            point.type = [[dpoint objectForKey:@"type"] intValue];
+            point.x = [[dpoint objectForKey:@"X"] intValue]*10;
+            point.y = [[dpoint objectForKey:@"Y"] intValue]*10;
+            point.type = [[dpoint objectForKey:@"Type"] intValue];
             [self.points addObject:point];
         }
         self.plaverV0 = -1;
@@ -78,16 +78,19 @@
 -(void)playerDown{
     
     int blockPos = self.playerX/10;
-    for (GC_Point *point in self.points){
-        if(point.x == blockPos){
-            
-            if (point.y == self.playerY -10){
-                self.plaverV0=-1;
-                return;
+    if (self.plaverV0<0) {
+        
+        for (GC_Point *point in self.points){
+            if(point.x/10 == blockPos){
+                
+                if (point.y == self.playerY -10){
+                    self.plaverV0=-1;
+                    return;
+                }
+                
             }
             
         }
-        
     }
     self.plaverV0 -= 0.03;
     self.playerY += self.plaverV0;
